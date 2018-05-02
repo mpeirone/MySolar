@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9bb57ace-2671-496a-8d4d-deda426c9541" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/MySolar/.gitignore" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/Database/Query.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/Database/solardb.sql" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/Database/utenti.sql" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/LICENSE" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/README.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/bower.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/data/flot-data.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/data/morris-data.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/dist/css/sb-admin-2.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/dist/css/sb-admin-2.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/dist/js/sb-admin-2.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/dist/js/sb-admin-2.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/gulpfile.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/index.html" afterPath="$PROJECT_DIR$/MySolar/index.html" />
+      <change beforePath="$PROJECT_DIR$/MySolar/indexOld.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/js/sb-admin-2.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/less/mixins.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/less/sb-admin-2.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/less/variables.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/package.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/pages/blank.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/pages/buttons.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/pages/flot.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/pages/forms.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/pages/grid.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/pages/icons.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/pages/index.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/pages/login.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/pages/morris.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/pages/notifications.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/pages/panels-wells.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/pages/tables.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/pages/typography.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/pagine/login.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/vendor/bootstrap-social/bootstrap-social.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/vendor/bootstrap-social/bootstrap-social.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/vendor/bootstrap-social/bootstrap-social.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/vendor/bootstrap/css/bootstrap.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/vendor/bootstrap/css/bootstrap.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/vendor/bootstrap/fonts/glyphicons-halflings-regular.eot" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/vendor/bootstrap/fonts/glyphicons-halflings-regular.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/vendor/bootstrap/fonts/glyphicons-halflings-regular.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/vendor/bootstrap/fonts/glyphicons-halflings-regular.woff" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/vendor/bootstrap/fonts/glyphicons-halflings-regular.woff2" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/vendor/bootstrap/js/bootstrap.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/vendor/bootstrap/js/bootstrap.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/vendor/datatables-plugins/dataTables.bootstrap.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/vendor/datatables-plugins/dataTables.bootstrap.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/vendor/datatables-plugins/dataTables.bootstrap.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/vendor/datatables-plugins/index.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/vendor/datatables-responsive/dataTables.responsive.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/vendor/datatables-responsive/dataTables.responsive.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/vendor/datatables-responsive/dataTables.responsive.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/vendor/datatables/css/dataTables.bootstrap.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/vendor/datatables/css/dataTables.bootstrap.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/vendor/datatables/css/dataTables.bootstrap4.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/vendor/datatables/css/dataTables.bootstrap4.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/vendor/datatables/css/dataTables.foundation.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/vendor/datatables/css/dataTables.foundation.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/vendor/datatables/css/dataTables.jqueryui.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/vendor/datatables/css/dataTables.jqueryui.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/vendor/datatables/css/dataTables.material.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/vendor/datatables/css/dataTables.material.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/vendor/datatables/css/dataTables.semanticui.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/vendor/datatables/css/dataTables.semanticui.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/vendor/datatables/css/dataTables.uikit.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/vendor/datatables/css/dataTables.uikit.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/vendor/datatables/css/jquery.dataTables.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/vendor/datatables/css/jquery.dataTables.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/vendor/datatables/css/jquery.dataTables_themeroller.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/vendor/datatables/images/Sorting icons.psd" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/vendor/datatables/images/favicon.ico" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/vendor/datatables/images/sort_asc.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/vendor/datatables/images/sort_asc_disabled.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/vendor/datatables/images/sort_both.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/vendor/datatables/images/sort_desc.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/vendor/datatables/images/sort_desc_disabled.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/vendor/datatables/js/dataTables.bootstrap.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/vendor/datatables/js/dataTables.bootstrap.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/vendor/datatables/js/dataTables.bootstrap4.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/vendor/datatables/js/dataTables.bootstrap4.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/vendor/datatables/js/dataTables.foundation.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/vendor/datatables/js/dataTables.foundation.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/vendor/datatables/js/dataTables.jqueryui.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/vendor/datatables/js/dataTables.jqueryui.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/vendor/datatables/js/dataTables.material.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/vendor/datatables/js/dataTables.material.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/vendor/datatables/js/dataTables.semanticui.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/vendor/datatables/js/dataTables.semanticui.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/vendor/datatables/js/dataTables.uikit.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/vendor/datatables/js/dataTables.uikit.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/vendor/datatables/js/jquery.dataTables.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/vendor/datatables/js/jquery.dataTables.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/vendor/datatables/js/jquery.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/vendor/flot-tooltip/jquery.flot.tooltip.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/vendor/flot-tooltip/jquery.flot.tooltip.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/vendor/flot-tooltip/jquery.flot.tooltip.source.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/vendor/flot/excanvas.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/vendor/flot/excanvas.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/vendor/flot/jquery.colorhelpers.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/vendor/flot/jquery.flot.canvas.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/vendor/flot/jquery.flot.categories.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/vendor/flot/jquery.flot.crosshair.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/vendor/flot/jquery.flot.errorbars.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/vendor/flot/jquery.flot.fillbetween.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/vendor/flot/jquery.flot.image.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/vendor/flot/jquery.flot.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/vendor/flot/jquery.flot.navigate.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/vendor/flot/jquery.flot.pie.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/vendor/flot/jquery.flot.resize.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/vendor/flot/jquery.flot.selection.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/vendor/flot/jquery.flot.stack.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/vendor/flot/jquery.flot.symbol.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/vendor/flot/jquery.flot.threshold.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/vendor/flot/jquery.flot.time.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/vendor/flot/jquery.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/vendor/font-awesome/HELP-US-OUT.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/vendor/font-awesome/css/font-awesome.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/vendor/font-awesome/css/font-awesome.css.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/vendor/font-awesome/css/font-awesome.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/vendor/font-awesome/fonts/FontAwesome.otf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/vendor/font-awesome/fonts/fontawesome-webfont.eot" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/vendor/font-awesome/fonts/fontawesome-webfont.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/vendor/font-awesome/fonts/fontawesome-webfont.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/vendor/font-awesome/fonts/fontawesome-webfont.woff" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/vendor/font-awesome/fonts/fontawesome-webfont.woff2" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/vendor/font-awesome/less/animated.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/vendor/font-awesome/less/bordered-pulled.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/vendor/font-awesome/less/core.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/vendor/font-awesome/less/extras.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/vendor/font-awesome/less/fixed-width.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/vendor/font-awesome/less/font-awesome.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/vendor/font-awesome/less/icons.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/vendor/font-awesome/less/larger.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/vendor/font-awesome/less/list.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/vendor/font-awesome/less/mixins.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/vendor/font-awesome/less/path.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/vendor/font-awesome/less/rotated-flipped.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/vendor/font-awesome/less/screen-reader.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/vendor/font-awesome/less/spinning.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/vendor/font-awesome/less/stacked.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/vendor/font-awesome/less/variables.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/vendor/font-awesome/scss/_animated.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/vendor/font-awesome/scss/_bordered-pulled.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/vendor/font-awesome/scss/_core.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/vendor/font-awesome/scss/_extras.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/vendor/font-awesome/scss/_fixed-width.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/vendor/font-awesome/scss/_icons.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/vendor/font-awesome/scss/_larger.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/vendor/font-awesome/scss/_list.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/vendor/font-awesome/scss/_mixins.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/vendor/font-awesome/scss/_path.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/vendor/font-awesome/scss/_rotated-flipped.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/vendor/font-awesome/scss/_screen-reader.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/vendor/font-awesome/scss/_spinning.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/vendor/font-awesome/scss/_stacked.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/vendor/font-awesome/scss/_variables.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/vendor/font-awesome/scss/font-awesome.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/vendor/jquery/jquery.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/vendor/jquery/jquery.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/vendor/metisMenu/metisMenu.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/vendor/metisMenu/metisMenu.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/vendor/metisMenu/metisMenu.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/vendor/metisMenu/metisMenu.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/vendor/morrisjs/morris.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/vendor/morrisjs/morris.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/vendor/morrisjs/morris.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/vendor/raphael/raphael.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySolar/vendor/raphael/raphael.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/TO DO" afterPath="" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/MySolar/WebSite/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="332">
+              <caret line="39" column="66" lean-forward="false" selection-start-line="39" selection-start-column="66" selection-end-line="39" selection-end-column="66" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>sign</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/MySolar/WebApp/Pages/blank.html" />
+        <option value="$PROJECT_DIR$/MySolar/WebApp/Pages/index.html" />
+        <option value="$PROJECT_DIR$/MySolar/index.html" />
+        <option value="$PROJECT_DIR$/MySolar/WebSite/index.html" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="953" />
+    <option name="width" value="974" />
+    <option name="height" value="1047" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="MySolar" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MySolar" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="MySolar" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MySolar" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Database" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="MySolar" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MySolar" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="MySolar" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="MySolar" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MySolar" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="MySolar" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="WebSite" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Matte\Documents\GitHub\MySolar\MySolar\WebApp\Pages" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9bb57ace-2671-496a-8d4d-deda426c9541" name="Default" comment="" />
+      <created>1525271706101</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1525271706101</updated>
+      <workItem from="1525271707313" duration="527000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="527000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/MySolar/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="28" lean-forward="true" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MySolar/WebApp/Pages/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MySolar/WebApp/Pages/blank.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MySolar/WebSite/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="332">
+          <caret line="39" column="66" lean-forward="false" selection-start-line="39" selection-start-column="66" selection-end-line="39" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
