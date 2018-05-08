@@ -2,7 +2,7 @@ https://blackrockdigital.github.io/startbootstrap-one-page-wonder/
 https://startbootstrap.com/template-overviews/sb-admin/
 ||KwTotaliProdotti||%autoconsumo||Kwper||Saldo||
 grafico energia prodotta ultimo anno
-
+grafico energia prodotta per anni
 grafico autoconsumo per fasce orarie
 
 
