@@ -1,8 +1,7 @@
 <?php
 session_start();
-if(!isset($_SESSION['Id'])) {
+if(!isset($_SESSION['Id'])) 
     header("location: login.php");
-}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -34,26 +33,26 @@ if(!isset($_SESSION['Id'])) {
     </button>
     <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
-            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Pagina Principale">
-                <a class="nav-link" href="index.html">
+            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Pagina Principale" style="background-color: #212529">
+                <a class="nav-link" href="index.php">
                     <i class="fas fa-chart-line"></i>
                     <span class="nav-link-text">Pagina Principale</span>
                 </a>
             </li>
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Nuova Lettura">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="lettura.php">
                     <i class="fas fa-pencil-alt"></i>
                     <span class="nav-link-text">Nuova Lettura</span>
                 </a>
             </li>
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dati Mensili">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="dati.php">
                     <i class="fas fa-print"></i>
                     <span class="nav-link-text">Dati Mensili</span>
                 </a>
             </li>
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Confronta Mesi">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="confronta.php">
                     <i class="fas fa-info"></i>
                     <span class="nav-link-text">Confronta Mesi</span>
                 </a>
@@ -224,7 +223,7 @@ if(!isset($_SESSION['Id'])) {
                 <div class="modal-body">Clicca su "Logout" per uscire</div>
                 <div class="modal-footer">
                     <button class="btn btn-secondary" type="button" data-dismiss="modal">Annulla</button>
-                    <a class="btn btn-primary" href="login.html">Logout</a>
+                    <a class="btn btn-primary" href="logout.php">Logout</a>
                 </div>
             </div>
         </div>
