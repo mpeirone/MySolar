@@ -4,7 +4,7 @@ if(!isset($_SESSION['Id']))
     header("location: login.php");
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 
 <head>
     <meta charset="utf-8">
@@ -241,7 +241,7 @@ if(!isset($_SESSION['Id']))
     <script src="../js/sb-admin.min.js"></script>
     <!-- Custom scripts for this page-->
     <script src="../js/sb-admin-datatables.min.js"></script>
-    <script src="../js/sb-admin-charts.min.js"></script>
+    <script src="../js/index.js"></script>
 </div>
 </body>
 

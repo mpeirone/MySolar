@@ -12,7 +12,7 @@ if(isset($_SESSION['Id']))
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>SB Admin - Start Bootstrap Template</title>
+    <title>MySolar-Login</title>
     <!-- Bootstrap core CSS-->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom fonts for this template-->
@@ -41,7 +41,7 @@ if(isset($_SESSION['Id']))
                     {
                         echo("<p>Username o password non inseriti</p>");
                     }else {
-                        $con=new mysqli("localhost","root","","solardb");
+                        $con=new mysqli("localhost","Admin","","solardb");
                         if($con->connect_errno)
                             die("Errore connessione database. ".$con->connect_errno." ".$con->connect_error);
 

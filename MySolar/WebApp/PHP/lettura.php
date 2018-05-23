@@ -1,5 +1,10 @@
+<?php
+session_start();
+if(!isset($_SESSION['Id']))
+    header("location: login.php");
+?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 
 <head>
     <meta charset="utf-8">
@@ -7,7 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>My Solar</title>
+    <title>My Solar - Nuova lettura</title>
     <!-- Bootstrap core CSS-->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom fonts for this template-->
@@ -111,7 +116,9 @@
                     <label>-A3</label>
                     <input type="number" id="numPriv-A3" min="0" class="form-control">
                 </div>
-                <input class="btn btn-primary btn-block" id="btnLettura" value="Aggiungi dati">
+                <label>Data</label>
+                <input type="date" id="data" class="form-control" max="today">
+                <button class="btn btn-primary btn-block" id="btnLettura">Aggiungi dati</button>
             </form>
         </div>
     </div>
@@ -160,6 +167,8 @@
     <!-- Custom scripts for this page-->
     <script src="../js/sb-admin-datatables.min.js"></script>
     <script src="../js/sb-admin-charts.min.js"></script>
+    <script src="../js/lettura.js"></script>
+    <script src="../js/libreria.js"></script>
 </div>
 </body>
 
