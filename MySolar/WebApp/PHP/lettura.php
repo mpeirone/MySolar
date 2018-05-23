@@ -83,6 +83,8 @@ if(!isset($_SESSION['Id']))
                 <i class="fa fa-area-chart"></i> Contatore GSE</div>
             <form role="form">
                 <div class="form-group">
+                    <label>Data Lettura</label>
+                    <input type="date" id="DataLettura" class="form-control">
                     <label>A1</label>
                     <input type="number" id="numGseA1" min="0" class="form-control">
                     <label>A2</label>
@@ -116,9 +118,8 @@ if(!isset($_SESSION['Id']))
                     <label>-A3</label>
                     <input type="number" id="numPriv-A3" min="0" class="form-control">
                 </div>
-                <label>Data</label>
-                <input type="date" id="data" class="form-control" max="today">
-                <button class="btn btn-primary btn-block" id="btnLettura">Aggiungi dati</button>
+                <label id="lblerrore"></label>
+                <a class="btn btn-primary btn-block" id="btnLettura">Aggiungi dati</a>
             </form>
         </div>
     </div>

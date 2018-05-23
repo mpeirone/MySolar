@@ -1,4 +1,0 @@
-crea tabella
-CREATE TABLE `solardb`.`Utenti` ( `IdUtente` INT NOT NULL AUTO_INCREMENT , `Email` VARCHAR(30) NOT NULL , `Password` VARCHAR(30) NOT NULL , `Nome` VARCHAR(30) NOT NULL , `Cognome` VARCHAR(30) NOT NULL , `Data_Registrazione` DATE NOT NULL , `Indirizzo` VARCHAR(50) NULL , `Città` VARCHAR(30) NULL , `Provincia` VARCHAR(2) NULL , `CAP` VARCHAR(6) NULL , `EmailConfermata` BIT NULL , PRIMARY KEY (`IdUtente`)) ENGINE = InnoDB;
-aggiungi a tabella
-INSERT INTO `utenti` (`IdUtente`, `Email`, `Password`, `Nome`, `Cognome`, `Data_Registrazione`, `Indirizzo`, `Città`, `Provincia`, `CAP`, `EmailConfermata`) VALUES (NULL, 'm.peirone.9953@vallauri.edu', 'password', 'Matteo', 'Peirone', '2018-04-27', 'Strada Orià 3', 'Carrù', 'CN', '12061', b'0');

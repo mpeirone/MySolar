@@ -41,7 +41,7 @@ if(isset($_SESSION['Id']))
                     {
                         echo("<p>Username o password non inseriti</p>");
                     }else {
-                        $con=new mysqli("localhost","Admin","","solardb");
+                        $con=new mysqli("localhost","root","","solardb");
                         if($con->connect_errno)
                             die("Errore connessione database. ".$con->connect_errno." ".$con->connect_error);
 
