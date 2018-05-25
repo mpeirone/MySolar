@@ -80,31 +80,11 @@ if(!isset($_SESSION['Id']))
     <div class="container-fluid">
         <div class="card mb-3">
             <div class="card-header">
-                <i class="fa fa-area-chart"></i> Contatore GSE</div>
+                <i class="fa fa-area-chart"></i>Contatore Privato</div>
             <form role="form">
                 <div class="form-group">
                     <label>Data Lettura</label>
                     <input type="date" id="DataLettura" class="form-control">
-                    <label>A1</label>
-                    <input type="number" id="numGseA1" min="0" class="form-control">
-                    <label>A2</label>
-                    <input type="number" id="numGseA2" min="0" class="form-control">
-                    <label>A3</label>
-                    <input type="number" id="numGseA3" min="0" class="form-control">
-                    <label>-A1</label>
-                    <input type="number" id="numGse-A1" min="0" class="form-control">
-                    <label>-A2</label>
-                    <input type="number" id="numGse-A2" min="0" class="form-control">
-                    <label>-A3</label>
-                    <input type="number" id="numGse-A3"min="0" class="form-control">
-                </div>
-            </form>
-        </div>
-        <div class="card mb-3">
-            <div class="card-header">
-                <i class="fa fa-area-chart"></i> Contatore Privato</div>
-            <form role="form">
-                <div class="form-group">
                     <label>A1</label>
                     <input type="number" id="numPrivA1" min="0" class="form-control">
                     <label>A2</label>
@@ -119,6 +99,26 @@ if(!isset($_SESSION['Id']))
                     <input type="number" id="numPriv-A3" min="0" class="form-control">
                 </div>
                 <label id="lblerrore"></label>
+        </div>
+        <div class="card mb-3">
+            <div class="card-header">
+                <i class="fa fa-area-chart"></i> Contatore GSE</div>
+            <form role="form">
+                <div class="form-group">
+                    <label>A1</label>
+                    <input type="number" id="numGseA1" min="0" class="form-control">
+                    <label>A2</label>
+                    <input type="number" id="numGseA2" min="0" class="form-control">
+                    <label>A3</label>
+                    <input type="number" id="numGseA3" min="0" class="form-control">
+                    <label>-A1</label>
+                    <input type="number" id="numGse-A1" min="0" class="form-control">
+                    <label>-A2</label>
+                    <input type="number" id="numGse-A2" min="0" class="form-control">
+                    <label>-A3</label>
+                    <input type="number" id="numGse-A3"min="0" class="form-control">
+                </div>
+            </form>
                 <a class="btn btn-primary btn-block" id="btnLettura">Aggiungi dati</a>
             </form>
         </div>

@@ -19,7 +19,33 @@
 
     <!-- Custom styles for this template -->
     <link href="css/one-page-wonder.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        // Add smooth scrolling to all links
+        $("#scroll").on('click', function(event) {
 
+          // Make sure this.hash has a value before overriding default behavior
+          if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+
+            // Store hash
+            var hash = this.hash;
+
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').animate({
+              scrollTop: $(hash).offset().top
+            }, 800, function(){
+
+              // Add hash (#) to URL when done scrolling (default click behavior)
+              window.location.hash = hash;
+            });
+          } // End if
+        });
+      });
+    </script>
   </head>
 
   <body>
@@ -44,18 +70,14 @@
       </div>
     </nav>
 
-    <header class="masthead text-center text-white">
+    <header class="masthead text-center text-white" style="background-image: url(img/bg.jpg)">
       <div class="masthead-content">
         <div class="container">
           <h1 class="masthead-heading mb-0">My Solar</h1>
           <h2 class="masthead-subheading mb-0">Il solare reso semplice</h2>
-          <a href="#" class="btn btn-primary btn-xl rounded-pill mt-5">Scopri di più</a>
+          <a href="#primo" id="scroll" class="btn btn-primary btn-xl rounded-pill mt-5" style="background-color: rgb(277,177,4); border-color:rgb(277,177,4)">Scopri di più</a>
         </div>
       </div>
-      <div class="bg-circle-1 bg-circle"></div>
-      <div class="bg-circle-2 bg-circle"></div>
-      <div class="bg-circle-3 bg-circle"></div>
-      <div class="bg-circle-4 bg-circle"></div>
     </header>
 
     <section>
@@ -63,13 +85,13 @@
         <div class="row align-items-center">
           <div class="col-lg-6 order-lg-2">
             <div class="p-5">
-              <img class="img-fluid rounded-circle" src="img/01.jpg" alt="">
+              <img class="img-fluid rounded-circle" src="img/Pannelli.jpg" alt="">
             </div>
           </div>
           <div class="col-lg-6 order-lg-1">
             <div class="p-5">
-              <h2 class="display-4">For those about to rock...</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati.</p>
+              <h2 class="display-4" id="primo">Energia Pulita</h2>
+              <p>I pannelli solari sono la principale fonte di energia rinnovabile attualmente in commercio, il nostro scopo è quello di permettere a chiunque di gestire un impianto solare in casa propria senza dover ricorrere ad un contabile</p>
             </div>
           </div>
         </div>
@@ -81,13 +103,13 @@
         <div class="row align-items-center">
           <div class="col-lg-6">
             <div class="p-5">
-              <img class="img-fluid rounded-circle" src="img/02.jpg" alt="">
+              <img class="img-fluid rounded-circle" src="img/Casa.jpg" alt="">
             </div>
           </div>
           <div class="col-lg-6">
             <div class="p-5">
-              <h2 class="display-4">We salute you!</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati.</p>
+              <h2 class="display-4">L'energia a casa tua</h2>
+              <p>Se hai (o avrai) un impianto solare a casa tua sicuramente conosci le molteplici difficoltà legate alla gestione, con il nostro strumento abbatterai questo unico lato negativo</p>
             </div>
           </div>
         </div>
@@ -99,13 +121,13 @@
         <div class="row align-items-center">
           <div class="col-lg-6 order-lg-2">
             <div class="p-5">
-              <img class="img-fluid rounded-circle" src="img/03.jpg" alt="">
+              <img class="img-fluid rounded-circle" src="img/Calcolatrice.jpg" alt="">
             </div>
           </div>
           <div class="col-lg-6 order-lg-1">
             <div class="p-5">
-              <h2 class="display-4">Let there be rock!</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati.</p>
+              <h2 class="display-4">Basta Calcoli</h2>
+              <p>Il nostro strumento calcola automaticamente tutti i consumi e le vendite di energia, tu dovrai solo guardare i grafici e ammirare il funzionamento del tuo impianto</p>
             </div>
           </div>
         </div>
@@ -115,7 +137,7 @@
     <!-- Footer -->
     <footer class="py-5 bg-black">
       <div class="container">
-        <p class="m-0 text-center text-white small">Copyright &copy; Your Website 2018</p>
+        <p class="m-0 text-center text-white small">Realizzato da Costamagna Josef e Peirone Matteo</p>
       </div>
       <!-- /.container -->
     </footer>

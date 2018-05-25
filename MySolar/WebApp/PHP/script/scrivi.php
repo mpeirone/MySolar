@@ -25,7 +25,8 @@ $rs=$con->query($sql);
     if(!$rs)
         die("Errore query. ".$con->errno." ".$con->error);
 $con->close();
-echo("ok");
+
+echo("ok:priva1:$PrivA1");
 }else
     {
         if(isset($_POST['PrivA3']))

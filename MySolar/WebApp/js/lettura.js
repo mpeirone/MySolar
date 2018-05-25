@@ -46,8 +46,18 @@ $( document ).ready(function() {
             $("#DataLettura").css("border-color","#a94442");
         }
         if($("#numPrivA1").val()!=""&&$("#numPrivA2").val()!=""&&$("#numPrivA3").val()!=""&&$("#numPriv-A1").val()!=""&&$("#numPriv-A2").val()!=""&&$("#numPriv-A3").val()!=""&&$("#numGseA1").val()!=""&&$("#numGseA2").val()!=""&&$("#numGseA3").val()!=""&&$("#numGse-A1").val()!=""&&$("#numGse-A2").val()!=""&&$("#numGse-A3").val()!=""&&$("#DataLettura").val()!="") {
-            send_request("../PHP/script/scrivi.php", "POST", "PrivA1=" + $("#numPrivA1").val() + "&PrivA2=" + $("#numPrivA2").val() + "&PrivA3=" + $("#numPrivA3").val() + "&Priv_A1=" + $("#numPriv-A1").val() + "&Priv_A2=" + $("#numPriv-A2").val() + "&Priv_A3=" + $("#numPriv-A3").val() + "&GseA1=" + $("#numGseA1").val() + "&GseA2=" + $("#numGseA2").val() + "&GseA3=" + $("#numGseA3").val() + "&Gse_A1=" + $("#numGse-A1").val() + "&Gse_A2=" + $("#numGse-A2").val() + "&Gse_A3=" + $("#numGse-A3").val() + "&Data=" +(String($("#DataLettura").val()).substr(0,8))+"01", analizza);
-        }else{
+            {
+                    //if($("#numPrivA1").val()>$("#numPrivA1").prop("min")&&$("#numPrivA2").val()>$("#numPrivA2").prop("min")&&$("#numPrivA3").val()>$("#numPrivA3").prop("min")&&$("#numPriv-A1").val()>$("#numPriv-A1").prop("min")&&$("#numPriv-A2").val()>$("#numPriv-A2").prop("min")&&$("#numPriv-A3").val()>$("#numPriv-A3").prop("min")&&$("#numGseA1").val()>$("#numGseA1").prop("min")&&$("#numGseA2").val()>$("#numGseA2").prop("min")&&$("#numGseA3").val()>$("#numGseA3").prop("min")&&$("#numGse-A1").val()>$("#numGse-A1").prop("min")&&$("#numGse-A2").val()>$("#numGse-A2").prop("min")&&$("#numGse-A3").val()>$("#numGse-A3").prop("min"))
+                    //{
+                        send_request("../PHP/script/scrivi.php", "POST", "PrivA1=" + $("#numPrivA1").val() + "&PrivA2=" + $("#numPrivA2").val() + "&PrivA3=" + $("#numPrivA3").val() + "&Priv_A1=" + $("#numPriv-A1").val() + "&Priv_A2=" + $("#numPriv-A2").val() + "&Priv_A3=" + $("#numPriv-A3").val() + "&GseA1=" + $("#numGseA1").val() + "&GseA2=" + $("#numGseA2").val() + "&GseA3=" + $("#numGseA3").val() + "&Gse_A1=" + $("#numGse-A1").val() + "&Gse_A2=" + $("#numGse-A2").val() + "&Gse_A3=" + $("#numGse-A3").val() + "&Data=" + (String($("#DataLettura").val()).substr(0, 8)) + "01", analizza);
+                    //}else
+                    //{
+                       // $("#lblerrore").html("Errore,alcuni dati inseriti sono maggiori di quelli presenti in una lettura precedente");
+                       // $("#lblerrore").css("color","red");
+                    //}
+
+                    }
+            }else{
                 $("#lblerrore").html("Errore, non tutti i dati sono stati inseriti");
                 $("#lblerrore").css("color","red");
         }
@@ -96,7 +106,7 @@ function ImpostaMin(responseText) {;
 function analizza(responseText) {
     alert(responseText);
     if(responseText!="\r\nok"){
-        alert("Errore durante l'inserimento dati, se il problema persiste contatta l'assistenza");
+        alert("Errore durante l'inserimento dati, se il problema persiste contatta l'assistenza");}
         else
             {
                 $(".form-control").val("");
@@ -104,7 +114,6 @@ function analizza(responseText) {
                 $("#lblerrore").css("color","green");
         }
     }
-}
 function  AggiornaGrafico2() {
     console.log( "Aggiorno grafico 2!" );
 }
