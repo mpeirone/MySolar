@@ -242,6 +242,7 @@ if(!isset($_SESSION['Id']))
     <!-- Custom scripts for this page-->
     <script src="../js/sb-admin-datatables.min.js"></script>
     <script src="../js/index.js"></script>
+    <script src="../js/libreria.js"></script>
 </div>
 </body>
 

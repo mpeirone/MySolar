@@ -29,11 +29,11 @@ if(isset($_SESSION['Id']))
             <form action="login.php"  method="post">
                 <div class="form-group">
                     <label for="InputEmail">Email</label>
-                    <input class="form-control" id="InputEmail" type="email" name="InputEmail" aria-describedby="emailHelp" placeholder="Inserisci Email" value="boo@boo.it">
+                    <input class="form-control" id="InputEmail" type="email" name="InputEmail" aria-describedby="emailHelp" placeholder="Inserisci Email" value="m.peirone.9953@vallauri.edu">
                 </div>
                 <div class="form-group">
                     <label for="InputPassword">Password</label>
-                    <input class="form-control" id="InputPassword" name="InputPassword" type="password" placeholder="Password" value="pass">
+                    <input class="form-control" id="InputPassword" name="InputPassword" type="password" placeholder="Password" value="password">
                 </div>
                 <?php
                 if (isset($_POST['InputEmail'])&&isset($_POST['InputPassword'])) {

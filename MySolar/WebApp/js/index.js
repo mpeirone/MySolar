@@ -8,7 +8,10 @@ function AggiornaCard() {
     console.log( "Aggiorno le card!" );
 }
 function AggiornaGrafico1() {
-    console.log( "Aggiorno grafico 1!" );
+    send_request("../PHP/script/MensiliPuliti.php", "POST", "", al);
+}
+function al(text) {
+    alert(text);
 }
 function  AggiornaGrafico2() {
     console.log( "Aggiorno grafico 2!" );

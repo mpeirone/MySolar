@@ -78,17 +78,10 @@ if(!isset($_SESSION['Id']))
 </nav>
 <div class="content-wrapper">
     <div class="container-fluid">
-        <!-- Breadcrumbs-->
-        <ol class="breadcrumb">
-            <li class="breadcrumb-item">
-                <a href="#">Dashboard</a>
-            </li>
-            <li class="breadcrumb-item active">Tables</li>
-        </ol>
         <!-- Example DataTables Card-->
         <div class="card mb-3">
             <div class="card-header">
-                <i class="fa fa-table"></i> Data Table Example</div>
+                <i class="fa fa-table"></i> Dati Produzione Impianto</div>
             <div class="card-body">
                 <div class="table-responsive">
                     <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
@@ -96,87 +89,30 @@ if(!isset($_SESSION['Id']))
                         <tr>
                             <th>Data</th>
                             <th>Energia venduta</th>
-                            <th>Energia comprtata</th>
+                            <th>Energia compratata</th>
                             <th>Saldo</th>
                             <th>Energia prodotta</th>
                             <th>Autoconsumo</th>
                             <th>Energia consumata</th>
                             <th>% Autoconsumo</th>
+                            <th> </th>
                         </tr>
                         </thead>
                         <tfoot>
                         <tr>
                             <th>Data</th>
                             <th>Energia venduta</th>
-                            <th>Energia comprtata</th>
+                            <th>Energia compratata</th>
                             <th>Saldo</th>
                             <th>Energia prodotta</th>
                             <th>Autoconsumo</th>
                             <th>Energia consumata</th>
                             <th>% Autoconsumo</th>
+                            <th> </th>
                         </tr>
                         </tfoot>
-                        <tbody>
-                        <tr>
-                            <td>Tiger Nixon</td>
-                            <td>System Architect</td>
-                            <td>Edinburgh</td>
-                            <td>61</td>
-                            <td>2011/04/25</td>
-                            <td>$320,800</td>
-                            <td>Tiger Nixon</td>
-                            <td>Tiger Nixon</td>
-                        </tr>
-                        <tr>
-                            <td>Tiger Nixon</td>
-                            <td>System Architect</td>
-                            <td>Edinburgh</td>
-                            <td>61</td>
-                            <td>2011/04/25</td>
-                            <td>$320,800</td>
-                            <td>Tiger Nixon</td>
-                            <td>Tiger Nixon</td>
-                        </tr>
-                        <tr>
-                            <td>Tiger Nixon</td>
-                            <td>System Architect</td>
-                            <td>Edinburgh</td>
-                            <td>61</td>
-                            <td>2011/04/25</td>
-                            <td>$320,800</td>
-                            <td>Tiger Nixon</td>
-                            <td>Tiger Nixon</td>
-                        </tr>
-                        <tr>
-                            <td>Tiger Nixon</td>
-                            <td>System Architect</td>
-                            <td>Edinburgh</td>
-                            <td>61</td>
-                            <td>2011/04/25</td>
-                            <td>$320,800</td>
-                            <td>Tiger Nixon</td>
-                            <td>Tiger Nixon</td>
-                        </tr>
-                        <tr>
-                            <td>Tiger Nixon</td>
-                            <td>System Architect</td>
-                            <td>Edinburgh</td>
-                            <td>61</td>
-                            <td>2011/04/25</td>
-                            <td>$320,800</td>
-                            <td>Tiger Nixon</td>
-                            <td>Tiger Nixon</td>
-                        </tr>
-                        <tr>
-                            <td>Tiger Nixon</td>
-                            <td>System Architect</td>
-                            <td>Edinburgh</td>
-                            <td>61</td>
-                            <td>2011/04/25</td>
-                            <td>$320,800</td>
-                            <td>Tiger Nixon</td>
-                            <td>Tiger Nixon</td>
-                        </tr>
+                        <tbody id="TBodyDati">
+
                         </tbody>
                     </table>
                 </div>
@@ -227,8 +163,8 @@ if(!isset($_SESSION['Id']))
     <!-- Custom scripts for all pages-->
     <script src="../js/sb-admin.min.js"></script>
     <!-- Custom scripts for this page-->
-    <script src="../js/sb-admin-datatables.min.js"></script>
-    <script src="../js/sb-admin-charts.min.js"></script>
+    <script src="../js/dati.js"></script>
+    <script src="../js/libreria.js"></script>
 </div>
 </body>
 
