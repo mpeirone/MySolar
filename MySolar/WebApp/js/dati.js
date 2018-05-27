@@ -9,8 +9,8 @@ $(document).ready(function() {
 } );
 
 
-function DatiTabella(Text) {
-    var dati = $.parseJSON(Text);
+function DatiTabella(text) {
+    var dati = $.parseJSON(text);
     var riga,Atot,menAtot,prodotta;
     for(var i=0;i<dati.length;i++){
         menAtot=dati[i]["Priv-A1"]+dati[i]["Priv-A2"]+dati[i]["Priv-A3"];
@@ -47,3 +47,51 @@ function roundTo(decimalpositions)
     return i / Math.pow(10,decimalpositions);
 }
 Number.prototype.roundTo = roundTo;
+
+function DatetoString(Data)
+{
+    var d = new Date(Data);
+    var mese = d.getMonth()+1;
+    var month="";
+    switch(mese)
+    {
+        case 1:
+            month="Gennaio";
+            break;
+        case 2:
+            month="Febbraio";
+            break;
+        case 3:
+            month="Marzo";
+            break;
+        case 4:
+            month="Aprile";
+            break;
+        case 5:
+            month="Maggio";
+            break;
+        case 6:
+            month="Giugno";
+            break;
+        case 7:
+            month="Luglio";
+            break;
+        case 8:
+            month="Agosto";
+            break;
+        case 9:
+            month="Settembre";
+            break;
+        case 10:
+            month="Ottobre";
+            break;
+        case 11:
+            month="Novembre";
+            break;
+        case 12:
+            month="Dicembre";
+            break;
+    }
+    return month+" "+d.getFullYear();
+
+}

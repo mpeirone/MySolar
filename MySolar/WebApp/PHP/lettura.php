@@ -98,7 +98,6 @@ if(!isset($_SESSION['Id']))
                     <label>-A3</label>
                     <input type="number" id="numPriv-A3" min="0" class="form-control">
                 </div>
-                <label id="lblerrore"></label>
         </div>
         <div class="card mb-3">
             <div class="card-header">
@@ -119,6 +118,7 @@ if(!isset($_SESSION['Id']))
                     <input type="number" id="numGse-A3"min="0" class="form-control">
                 </div>
             </form>
+                <label id="lblerrore"></label>
                 <a class="btn btn-primary btn-block" id="btnLettura">Aggiungi dati</a>
             </form>
         </div>

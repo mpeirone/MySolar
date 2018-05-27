@@ -3,13 +3,19 @@
   <component name="ChangeListManager">
     <list default="true" id="9bb57ace-2671-496a-8d4d-deda426c9541" name="Default" comment="">
       <change beforePath="" afterPath="$PROJECT_DIR$/MySolar/WebApp/PHP/script/Rimuovi.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/MySolar/WebApp/PHP/script/SommeAnnuali.php" />
       <change beforePath="" afterPath="$PROJECT_DIR$/MySolar/WebApp/js/dati.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/MySolar/WebApp/js/letturaold.js" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/MySolar/WebApp/PHP/dati.php" afterPath="$PROJECT_DIR$/MySolar/WebApp/PHP/dati.php" />
       <change beforePath="$PROJECT_DIR$/MySolar/WebApp/PHP/index.php" afterPath="$PROJECT_DIR$/MySolar/WebApp/PHP/index.php" />
+      <change beforePath="$PROJECT_DIR$/MySolar/WebApp/PHP/lettura.php" afterPath="$PROJECT_DIR$/MySolar/WebApp/PHP/lettura.php" />
       <change beforePath="$PROJECT_DIR$/MySolar/WebApp/PHP/login.php" afterPath="$PROJECT_DIR$/MySolar/WebApp/PHP/login.php" />
+      <change beforePath="$PROJECT_DIR$/MySolar/WebApp/PHP/script/DatiCard.php" afterPath="" />
       <change beforePath="$PROJECT_DIR$/MySolar/WebApp/PHP/script/MensiliPuliti.php" afterPath="$PROJECT_DIR$/MySolar/WebApp/PHP/script/MensiliPuliti.php" />
+      <change beforePath="$PROJECT_DIR$/MySolar/WebApp/PHP/script/UltimiDati.php" afterPath="$PROJECT_DIR$/MySolar/WebApp/PHP/script/UltimiDati.php" />
       <change beforePath="$PROJECT_DIR$/MySolar/WebApp/js/index.js" afterPath="$PROJECT_DIR$/MySolar/WebApp/js/index.js" />
+      <change beforePath="$PROJECT_DIR$/MySolar/WebApp/js/lettura.js" afterPath="$PROJECT_DIR$/MySolar/WebApp/js/lettura.js" />
     </list>
     <ignored path=".idea/dataSources.local.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -39,53 +45,35 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="dati.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/MySolar/WebApp/js/dati.js">
+      <file leaf-file-name="sb-admin-charts.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MySolar/WebApp/js/sb-admin-charts.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="27" column="176" lean-forward="false" selection-start-line="27" selection-start-column="176" selection-end-line="27" selection-end-column="193" />
-              <folding>
-                <marker date="1527271873493" expanded="true" signature="1102:1108" ph="..." />
-                <marker date="1527271873493" expanded="true" signature="1102:1113" ph="..." />
-                <marker date="1527271873493" expanded="true" signature="1216:1227" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Rimuovi.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MySolar/WebApp/PHP/script/Rimuovi.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-              <folding>
-                <marker date="1527271655150" expanded="true" signature="220:250" ph="Delete FROM dati... " />
-                <marker date="1527271655150" expanded="true" signature="220:251" ph="Delete FROM dati... " />
-                <marker date="1527271655150" expanded="true" signature="220:280" ph="Delete FROM dati... " />
-                <marker date="1527271655150" expanded="true" signature="220:288" ph="Delete FROM dati... " />
-                <marker date="1527271655150" expanded="true" signature="220:339" ph="Delete FROM dati... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MySolar/WebApp/js/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="68" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="68" />
+            <state relative-caret-position="68">
+              <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="53" selection-end-column="3" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MensiliPuliti.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MySolar/WebApp/PHP/script/MensiliPuliti.php">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/MySolar/WebApp/js/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="29">
-              <caret line="7" column="24" lean-forward="false" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="24" />
+            <state relative-caret-position="170">
+              <caret line="52" column="24" lean-forward="true" selection-start-line="52" selection-start-column="24" selection-end-line="52" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dati.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MySolar/WebApp/js/dati.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="15" column="32" lean-forward="true" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="32" />
               <folding>
-                <marker date="1527267695037" expanded="true" signature="154:312" ph="SELECT `Priv... dati" />
+                <marker date="1527437545985" expanded="true" signature="1102:1108" ph="..." />
+                <marker date="1527437545985" expanded="true" signature="1102:1113" ph="..." />
+                <marker date="1527437545985" expanded="true" signature="1216:1227" ph="..." />
               </folding>
             </state>
           </provider>
@@ -94,10 +82,10 @@
       <file leaf-file-name="UltimiDati.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MySolar/WebApp/PHP/script/UltimiDati.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
-              <caret line="35" column="16" lean-forward="true" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="16" />
+            <state relative-caret-position="170">
+              <caret line="10" column="72" lean-forward="false" selection-start-line="10" selection-start-column="63" selection-end-line="10" selection-end-column="72" />
               <folding>
-                <marker date="1527068718000" expanded="true" signature="196:741" ph="SELECT COALE... dati" />
+                <marker date="1527350457998" expanded="true" signature="196:764" ph="SELECT COALE... dati" />
               </folding>
             </state>
           </provider>
@@ -121,9 +109,13 @@
       <find>dati[i][&quot;Priv-A1&quot;]+dati[i][&quot;Priv-A2&quot;]+dati[i][&quot;Priv-A3&quot;]</find>
       <find>dati[i][&quot;Gse-A1&quot;]+dati[i][&quot;Gse-A2&quot;]+dati[i][&quot;Gse-A3&quot;]</find>
       <find>boo@</find>
+      <find>atot</find>
+      <find>[i]</find>
+      <find>consuma</find>
     </findStrings>
     <replaceStrings>
       <replace>fas fa-long-arrow-alt-down</replace>
+      <replace>[0]</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -144,16 +136,20 @@
         <option value="$PROJECT_DIR$/MySolar/WebApp/PHP/register.php" />
         <option value="$PROJECT_DIR$/MySolar/WebApp/PHP/confronta.php" />
         <option value="$PROJECT_DIR$/MySolar/WebApp/PHP/scrivi.php" />
-        <option value="$PROJECT_DIR$/MySolar/WebApp/js/lettura.js" />
         <option value="$PROJECT_DIR$/MySolar/WebApp/PHP/script/scrivi.php" />
-        <option value="$PROJECT_DIR$/MySolar/WebApp/PHP/lettura.php" />
-        <option value="$PROJECT_DIR$/MySolar/WebApp/PHP/index.php" />
-        <option value="$PROJECT_DIR$/MySolar/WebApp/js/index.js" />
-        <option value="$PROJECT_DIR$/MySolar/WebApp/PHP/script/MensiliPuliti.php" />
         <option value="$PROJECT_DIR$/MySolar/WebApp/PHP/login.php" />
         <option value="$PROJECT_DIR$/MySolar/WebApp/PHP/dati.php" />
         <option value="$PROJECT_DIR$/MySolar/WebApp/PHP/script/Rimuovi.php" />
+        <option value="$PROJECT_DIR$/MySolar/WebApp/PHP/lettura.php" />
+        <option value="$PROJECT_DIR$/MySolar/WebApp/PHP/script/MensiliPuliti.php" />
+        <option value="$PROJECT_DIR$/MySolar/WebApp/PHP/script/DatiTotali.php" />
+        <option value="$PROJECT_DIR$/MySolar/WebApp/PHP/script/UltimiDati.php" />
+        <option value="$PROJECT_DIR$/MySolar/WebApp/js/letturaold.js" />
+        <option value="$PROJECT_DIR$/MySolar/WebApp/js/lettura.js" />
         <option value="$PROJECT_DIR$/MySolar/WebApp/js/dati.js" />
+        <option value="$PROJECT_DIR$/MySolar/WebApp/PHP/script/SommeAnnuali.php" />
+        <option value="$PROJECT_DIR$/MySolar/WebApp/PHP/index.php" />
+        <option value="$PROJECT_DIR$/MySolar/WebApp/js/index.js" />
       </list>
     </option>
   </component>
@@ -163,15 +159,15 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
+  <component name="PhpDebugGeneral" listening_started="true" />
   <component name="PhpServers">
     <servers />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="x" value="-7" />
+    <option name="width" value="974" />
+    <option name="height" value="1047" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -188,6 +184,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -245,8 +243,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -256,12 +252,13 @@
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Matte\Documents\GitHub\MySolar\MySolar\WebApp\Pages" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\xampp\htdocs\MySolar\MySolar\WebApp\js" />
       <recent name="C:\xampp\htdocs\MySolar-master matte\MySolar\WebApp\js" />
       <recent name="C:\xampp\htdocs\MySolar-master\MySolar\WebApp\js" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Matte\Documents\GitHub\MySolar\MySolar\WebApp\Pages" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -334,16 +331,18 @@
       <workItem from="1527235486834" duration="3716000" />
       <workItem from="1527262398916" duration="5826000" />
       <workItem from="1527268554285" duration="3911000" />
+      <workItem from="1527338046494" duration="8301000" />
+      <workItem from="1527437033343" duration="10870000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51576000" />
+    <option name="totallyTimeSpent" value="70747000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
+    <frame x="-7" y="0" width="974" height="1047" extended-state="0" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17110874" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35776806" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -372,7 +371,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16950959" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17430703" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -399,39 +398,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="3" />
+      <option name="time" value="5" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/MySolar/WebSite/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MySolar/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="28" lean-forward="false" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MySolar/WebApp/Pages/blank.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MySolar/WebSite/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="36" column="55" lean-forward="false" selection-start-line="36" selection-start-column="50" selection-end-line="36" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MySolar/WebApp/Pages/login.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="714">
@@ -606,28 +577,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MySolar/WebApp/js/libreria.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="43" lean-forward="false" selection-start-line="0" selection-start-column="33" selection-end-line="0" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MySolar/WebApp/js/lettura.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1224">
-          <caret line="72" column="1" lean-forward="false" selection-start-line="72" selection-start-column="1" selection-end-line="72" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MySolar/WebApp/PHP/scrivi.php" />
-    <entry file="file://$PROJECT_DIR$/MySolar/WebApp/PHP/lettura.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="171" column="0" lean-forward="false" selection-start-line="171" selection-start-column="0" selection-end-line="171" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MySolar/WebApp/js/sb-admin-datatables.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -642,75 +592,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MySolar/WebApp/js/sb-admin-charts.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MySolar/WebApp/PHP/login.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="14" column="32" lean-forward="true" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
-          <folding>
-            <marker date="1527268089901" expanded="true" signature="2152:2229" ph="select count... utenti" />
-            <marker date="1527268089901" expanded="true" signature="2629:2738" ph="select IdUte... utenti" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MySolar/WebApp/PHP/script/scrivi.php">
+    <entry file="file://$PROJECT_DIR$/MySolar/WebApp/PHP/script/DatiTotali.php" />
+    <entry file="file://$PROJECT_DIR$/MySolar/WebApp/js/libreria.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="23" lean-forward="true" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="23" />
-          <folding>
-            <marker date="1527237958000" expanded="true" signature="877:1198" ph="INSERT INTO dati... " />
-          </folding>
+        <state relative-caret-position="0">
+          <caret line="0" column="43" lean-forward="false" selection-start-line="0" selection-start-column="33" selection-end-line="0" selection-end-column="43" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MySolar/WebApp/PHP/dati.php">
+    <entry file="file://$PROJECT_DIR$/MySolar/WebApp/PHP/lettura.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1049">
-          <caret line="97" column="33" lean-forward="false" selection-start-line="97" selection-start-column="33" selection-end-line="97" selection-end-column="33" />
+        <state relative-caret-position="17">
+          <caret line="107" column="74" lean-forward="false" selection-start-line="107" selection-start-column="70" selection-end-line="107" selection-end-column="74" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MySolar/WebApp/PHP/script/DatiCard.php">
+    <entry file="file://$PROJECT_DIR$/MySolar/WebApp/js/sb-admin.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MySolar/WebApp/PHP/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="34" lean-forward="true" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MySolar/WebApp/PHP/script/UltimiDati.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="35" column="16" lean-forward="true" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="16" />
           <folding>
-            <marker date="1527068718000" expanded="true" signature="196:741" ph="SELECT COALE... dati" />
+            <marker date="1527068718000" expanded="true" signature="246:267" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MySolar/WebApp/PHP/script/MensiliPuliti.php">
+    <entry file="file://$PROJECT_DIR$/MySolar/WebApp/js/letturaold.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="29">
-          <caret line="7" column="24" lean-forward="false" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="24" />
-          <folding>
-            <marker date="1527267695037" expanded="true" signature="154:312" ph="SELECT `Priv... dati" />
-          </folding>
+        <state relative-caret-position="17">
+          <caret line="1" column="4" lean-forward="false" selection-start-line="1" selection-start-column="4" selection-end-line="3" selection-end-column="7" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -728,23 +647,102 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MySolar/WebApp/js/index.js">
+    <entry file="file://$PROJECT_DIR$/MySolar/WebApp/PHP/script/DatiCard.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MySolar/WebApp/PHP/script/scrivi.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="23" lean-forward="true" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="23" />
+          <folding>
+            <marker date="1527237958000" expanded="true" signature="877:1198" ph="INSERT INTO dati... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MySolar/WebApp/PHP/script/SommeAnnuali.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="54" lean-forward="false" selection-start-line="7" selection-start-column="54" selection-end-line="7" selection-end-column="54" />
+          <folding>
+            <marker date="1527441189002" expanded="true" signature="154:161" ph="SELECT `IdDa... dati" />
+            <marker date="1527441189002" expanded="true" signature="154:748" ph="SELECT COUNT... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MySolar/WebApp/PHP/script/MensiliPuliti.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="45" lean-forward="true" selection-start-line="14" selection-start-column="8" selection-end-line="15" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MySolar/WebApp/PHP/dati.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="862">
+          <caret line="97" column="33" lean-forward="false" selection-start-line="97" selection-start-column="33" selection-end-line="97" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MySolar/WebApp/PHP/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="164" column="72" lean-forward="false" selection-start-line="164" selection-start-column="72" selection-end-line="164" selection-end-column="72" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MySolar/WebApp/js/lettura.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="4" column="4" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MySolar/WebApp/PHP/script/UltimiDati.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
-          <caret line="10" column="68" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="68" />
-          <folding />
+          <caret line="10" column="72" lean-forward="false" selection-start-line="10" selection-start-column="63" selection-end-line="10" selection-end-column="72" />
+          <folding>
+            <marker date="1527350457998" expanded="true" signature="196:764" ph="SELECT COALE... dati" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/MySolar/WebApp/js/dati.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="176" lean-forward="false" selection-start-line="27" selection-start-column="176" selection-end-line="27" selection-end-column="193" />
+        <state relative-caret-position="153">
+          <caret line="15" column="32" lean-forward="true" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="32" />
           <folding>
-            <marker date="1527271873493" expanded="true" signature="1102:1108" ph="..." />
-            <marker date="1527271873493" expanded="true" signature="1102:1113" ph="..." />
-            <marker date="1527271873493" expanded="true" signature="1216:1227" ph="..." />
+            <marker date="1527437545985" expanded="true" signature="1102:1108" ph="..." />
+            <marker date="1527437545985" expanded="true" signature="1102:1113" ph="..." />
+            <marker date="1527437545985" expanded="true" signature="1216:1227" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MySolar/WebApp/js/sb-admin-charts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="53" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MySolar/WebApp/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="52" column="24" lean-forward="true" selection-start-line="52" selection-start-column="24" selection-end-line="52" selection-end-column="24" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -86,14 +86,8 @@ if(!isset($_SESSION['Id']))
                         <div class="card-body-icon">
                             <i class="fa fa-fw fa-bolt"></i>
                         </div>
-                        <div class="mr-5"><a id="AKwTot"></a>Kw prodotti dal tuoi impianto!</div>
+                        <div class="mr-5"><a id="AKwTot"></a> Kw prodotti dal tuoi impianto!</div>
                     </div>
-                    <a class="card-footer text-white clearfix small z-1" href="#">
-                        <span class="float-left">Dettagli</span>
-              <span class="float-right">
-                <i class="fa fa-angle-right"></i>
-              </span>
-                    </a>
                 </div>
             </div>
             <div class="col-xl-3 col-sm-6 mb-3">
@@ -104,12 +98,6 @@ if(!isset($_SESSION['Id']))
                         </div>
                         <div class="mr-5"><a id="APercAutoConsumo"></a>% di energia autoconsumata</div>
                     </div>
-                    <a class="card-footer text-white clearfix small z-1" href="#">
-                        <span class="float-left">Dettagli</span>
-              <span class="float-right">
-                <i class="fa fa-angle-right"></i>
-              </span>
-                    </a>
                 </div>
             </div>
             <div class="col-xl-3 col-sm-6 mb-3">
@@ -118,14 +106,8 @@ if(!isset($_SESSION['Id']))
                         <div class="card-body-icon">
                             <i class="fas fa-calculator"></i>
                         </div>
-                        <div class="mr-5">Il tuo saldo è di <a id="Aaldo"></a></div>
+                        <div class="mr-5">Il tuo saldo è di <a id="ASaldo"></a> Kw verso la rete</div>
                     </div>
-                    <a class="card-footer text-white clearfix small z-1" href="#">
-                        <span class="float-left">Dettagli</span>
-              <span class="float-right">
-                <i class="fa fa-angle-right"></i>
-              </span>
-                    </a>
                 </div>
             </div>
             <div class="col-xl-3 col-sm-6 mb-3">
@@ -134,14 +116,8 @@ if(!isset($_SESSION['Id']))
                         <div class="card-body-icon">
                             <i class="fas fa-lightbulb"></i>
                         </div>
-                        <div class="mr-5">Il tuo saldo è di <a id="ASaldo"></a></div>
+                        <div class="mr-5">La tue media mensile di produzione è di <a id="AMediaMesile"></a> Kw</div>
                     </div>
-                    <a class="card-footer text-white clearfix small z-1" href="#">
-                        <span class="float-left">Dettagli</span>
-              <span class="float-right">
-                <i class="fa fa-angle-right"></i>
-              </span>
-                    </a>
                 </div>
             </div>
         </div>
@@ -186,7 +162,7 @@ if(!isset($_SESSION['Id']))
                 <!-- Example Pie Chart Card-->
                 <div class="card mb-3">
                     <div class="card-header">
-                        <i class="fa fa-pie-chart"></i> Energia Consumata</div>
+                        <i class="fa fa-pie-chart"></i> Energia Prodotta</div>
                     <div class="card-body">
                         <canvas id="myPieChart" width="100%" height="100"></canvas>
                     </div>
