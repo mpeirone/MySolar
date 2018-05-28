@@ -6,6 +6,7 @@ $( document ).ready(function() {
 function Cardegrafico3(text){
     AggiornaCard(text);
     AggiornaGrafico3(text);
+    $(".last-update").html("Dati aggiornati all'ultima lettura di "+DatetoString($.parseJSON(text)[0]["MaxData"]));
 }
 function AggiornaCard(text) {
     text=text.replace("\n", "")
@@ -21,28 +22,51 @@ function AggiornaCard(text) {
 }
 function AggiornaGrafico1(text) {
     var dati = $.parseJSON(text);
-    var energiaprodotta=[];
+    var energiaprodotta=[],anni=[];
 
     var anno=new Date(dati[0]["Data"]).getFullYear();
     var index=0;
     do{
             var i=0;
             var temp=[];
+            var data;
             while(i<12&&index<dati.length) {
-                var data=new Date(dati[index]["Data"]);
+                data=new Date(dati[index]["Data"]);
                 if ( data.getMonth()== i&&data.getFullYear()==anno) {
-                    temp.push(dati[index]["PrivA2"]);
+                    temp.push(parseInt(dati[index]["Gse-A1"])+parseInt(dati[index]["Gse-A2"])+parseInt(dati[index]["Gse-A3"]));
                     index++;
                 } else {
                     temp.push(null);
                 }
                 i++;
             }
-
+        anni.push(data.getFullYear());
         energiaprodotta.push(temp);
         anno++;
     }while(index<dati.length);
+    var i=0;
+    var dataset=[];
+    var colori=["rgba(2,117,216,k)","rgba(248,148,6,k)","rgba(39,255,18,k)","rgba(0,255,255,k)"]
+    do{
+        var set={
+            spanGaps: true,
+            label: "Kw anno "+anni[anni.length-i-1],
+            lineTension: 0.3,
+            backgroundColor: colori[i].replace("k","0.2"),
+            borderColor: colori[i].replace("k","1"),
+            pointRadius: 5,
+            pointBackgroundColor: colori[i].replace("k","1"),
+            pointBorderColor: "rgba(255,255,255,0.8)",
+            pointHoverRadius: 7,
+            pointHoverBackgroundColor: colori[i].replace("k","1"),
+            pointHitRadius: 20,
+            pointBorderWidth: 2,
+            data: energiaprodotta[energiaprodotta.length-i-1],
+        };
+        dataset.push(set);
 
+        i++;
+    }while(i<4||energiaprodotta.length<i)
 
 
     var ctx = document.getElementById("myAreaChart");
@@ -50,21 +74,7 @@ function AggiornaGrafico1(text) {
         type: 'line',
         data: {
             labels: ["Gennaio", "Febbraio", "Marzo", "Aprile", "Maggio", "Giugno","Luglio", "Agosto", "Settembre", "Ottobre", "Novembre", "Dicembre"],
-            datasets: [{
-                spanGaps: true,
-                label: "Kw prodotti",
-                lineTension: 0.3,
-                backgroundColor: "rgba(2,117,216,0.2)",
-                borderColor: "rgba(2,117,216,1)",
-                pointRadius: 5,
-                pointBackgroundColor: "rgba(2,117,216,1)",
-                pointBorderColor: "rgba(255,255,255,0.8)",
-                pointHoverRadius: 7,
-                pointHoverBackgroundColor: "rgba(2,117,216,1)",
-                pointHitRadius: 20,
-                pointBorderWidth: 2,
-                data: [10000, null, 26263, 18394, 18287, 28682, 31274, 33259, 25849, 24159, 32651,21000],
-            },],
+            datasets: dataset,
         },
         options: {
             scales: {
@@ -82,7 +92,6 @@ function AggiornaGrafico1(text) {
                 yAxes: [{
                     ticks: {
                         min: 0,
-                        max: 40000,
                         maxTicksLimit: 5
                     },
                     gridLines: {
@@ -111,7 +120,7 @@ function  AggiornaGrafico2(text) {
         data: {
             labels: anni,
             datasets: [{
-                label: "Revenue",
+                label: "Kw prodotti",
                 backgroundColor: "rgba(2,117,216,1)",
                 borderColor: "rgba(2,117,216,1)",
                 data: energiaprodotta,
@@ -156,7 +165,7 @@ function  AggiornaGrafico3(text) {
             labels: ["Autoconsumata in fascia A1", "Autoconsumata in fascia A2", "Autoconsumata in fascia A3", "Venduta in fascia A1","Venduta in fascia A2","Venduta in fascia A3"],
             datasets: [{
                 data: [parseInt(dati[0]["MaxGse-A1"])-parseInt(dati[0]["MaxPriv-A1"]), parseInt(dati[0]["MaxGse-A2"])-parseInt(dati[0]["MaxPriv-A2"]), parseInt(dati[0]["MaxGse-A3"])-parseInt(dati[0]["MaxPriv-A3"]), parseInt(dati[0]["MaxPriv-A1"]),parseInt(dati[0]["MaxPriv-A2"]),parseInt(dati[0]["MaxPriv-A3"])],
-                backgroundColor: ['#007bff', '#dc3545', '#ffc107', '#28a745','#FF53FF','#000000'],
+                backgroundColor: ['#007bff', '#dc3545', '#ffc107', '#28a745','#86E2D5','#F89406'],
             }],
         },
     });
@@ -171,3 +180,51 @@ function roundTo(decimalpositions)
     return i / Math.pow(10,decimalpositions);
 }
 Number.prototype.roundTo = roundTo;
+
+function DatetoString(Data)
+{
+    var d = new Date(Data);
+    var mese = d.getMonth()+1;
+    var month="";
+    switch(mese)
+    {
+        case 1:
+            month="Gennaio";
+            break;
+        case 2:
+            month="Febbraio";
+            break;
+        case 3:
+            month="Marzo";
+            break;
+        case 4:
+            month="Aprile";
+            break;
+        case 5:
+            month="Maggio";
+            break;
+        case 6:
+            month="Giugno";
+            break;
+        case 7:
+            month="Luglio";
+            break;
+        case 8:
+            month="Agosto";
+            break;
+        case 9:
+            month="Settembre";
+            break;
+        case 10:
+            month="Ottobre";
+            break;
+        case 11:
+            month="Novembre";
+            break;
+        case 12:
+            month="Dicembre";
+            break;
+    }
+    return month+" "+d.getFullYear();
+
+}

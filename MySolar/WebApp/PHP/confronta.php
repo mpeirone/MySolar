@@ -77,6 +77,13 @@ if(!isset($_SESSION['Id']))
     </div>
 </nav>
 <div class="content-wrapper">
+
+    <select class="selectpicker form-control" data-live-search="true">
+        <option data-tokens="ketchup mustard">Hot Dog, Fries and a Soda</option>
+        <option data-tokens="mustard">Burger, Shake and a Smile</option>
+        <option data-tokens="frosting">Sugar, Spice and all things nice</option>
+    </select>
+
     <!-- /.container-fluid-->
     <!-- /.content-wrapper-->
     <footer class="sticky-footer">

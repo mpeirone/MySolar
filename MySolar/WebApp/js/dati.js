@@ -1,6 +1,7 @@
 $(document).ready(function() {
     $('#dataTable').hide();
     send_request("../PHP/script/MensiliPuliti.php", "POST", "", DatiTabella);
+    send_request("../PHP/script/UltimiDati.php", "POST", "Data=" +new Date().toISOString().substr(0, 10), DatiAggiornati);
 
 
 
@@ -8,6 +9,9 @@ $(document).ready(function() {
 
 } );
 
+function DatiAggiornati(text){
+    $(".last-update").html("Dati aggiornati all'ultima lettura di "+DatetoString($.parseJSON(text)[0]["MaxData"]));
+}
 
 function DatiTabella(text) {
     var dati = $.parseJSON(text);
@@ -17,7 +21,8 @@ function DatiTabella(text) {
         Atot=dati[i]["PrivA1"]+dati[i]["PrivA2"]+dati[i]["PrivA3"];
         prodotta=dati[i]["Gse-A1"]+dati[i]["Gse-A2"]+dati[i]["Gse-A3"];
         riga=$("<tr></tr>")
-        riga.append($("<td>"+dati[i]["Data"]+"</td>"));
+        riga.append($("<td>"+i+"</td>"));
+        riga.append($("<td>"+DatetoString(dati[i]["Data"])+"</td>"));
         riga.append($("<td>"+menAtot+"</td>"));
         riga.append($("<td>"+(Atot)+"</td>"));
         riga.append($("<td>"+-(Atot-menAtot)+"</td>"));

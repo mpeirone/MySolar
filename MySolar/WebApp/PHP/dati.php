@@ -87,6 +87,7 @@ if(!isset($_SESSION['Id']))
                     <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                         <thead>
                         <tr>
+                            <th>#</th>
                             <th>Data</th>
                             <th>Energia venduta</th>
                             <th>Energia compratata</th>
@@ -100,6 +101,7 @@ if(!isset($_SESSION['Id']))
                         </thead>
                         <tfoot>
                         <tr>
+                            <th>#</th>
                             <th>Data</th>
                             <th>Energia venduta</th>
                             <th>Energia compratata</th>
@@ -117,7 +119,7 @@ if(!isset($_SESSION['Id']))
                     </table>
                 </div>
             </div>
-            <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
+            <div class="card-footer small text-muted last-update">Updated yesterday at 11:59 PM</div>
         </div>
     </div>
     <!-- /.container-fluid-->

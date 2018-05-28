@@ -86,17 +86,17 @@ if(!isset($_SESSION['Id']))
                     <label>Data Lettura</label>
                     <input type="date" id="DataLettura" class="form-control">
                     <label>A1</label>
-                    <input type="number" id="numPrivA1" min="0" class="form-control">
+                    <input type="number" name="selection" id="numPrivA1" min="0" class="form-control">
                     <label>A2</label>
-                    <input type="number" id="numPrivA2" min="0" class="form-control">
+                    <input type="number" name="selection" id="numPrivA2" min="0" class="form-control">
                     <label>A3</label>
-                    <input type="number" id="numPrivA3" min="0" class="form-control">
+                    <input type="number" name="selection" id="numPrivA3" min="0" class="form-control">
                     <label>-A1</label>
-                    <input type="number" id="numPriv-A1" min="0" class="form-control">
+                    <input type="number" name="selection" id="numPriv-A1" min="0" class="form-control">
                     <label>-A2</label>
-                    <input type="number" id="numPriv-A2" min="0" class="form-control">
+                    <input type="number" name="selection" id="numPriv-A2" min="0" class="form-control">
                     <label>-A3</label>
-                    <input type="number" id="numPriv-A3" min="0" class="form-control">
+                    <input type="number" name="selection" id="numPriv-A3" min="0" class="form-control">
                 </div>
         </div>
         <div class="card mb-3">
@@ -105,21 +105,21 @@ if(!isset($_SESSION['Id']))
             <form role="form">
                 <div class="form-group">
                     <label>A1</label>
-                    <input type="number" id="numGseA1" min="0" class="form-control">
+                    <input type="number" name="selection" id="numGseA1" min="0" class="form-control">
                     <label>A2</label>
-                    <input type="number" id="numGseA2" min="0" class="form-control">
+                    <input type="number" name="selection" id="numGseA2" min="0" class="form-control">
                     <label>A3</label>
-                    <input type="number" id="numGseA3" min="0" class="form-control">
+                    <input type="number" name="selection" id="numGseA3" min="0" class="form-control">
                     <label>-A1</label>
-                    <input type="number" id="numGse-A1" min="0" class="form-control">
+                    <input type="number" name="selection" id="numGse-A1" min="0" class="form-control">
                     <label>-A2</label>
-                    <input type="number" id="numGse-A2" min="0" class="form-control">
+                    <input type="number" name="selection" id="numGse-A2" min="0" class="form-control">
                     <label>-A3</label>
-                    <input type="number" id="numGse-A3"min="0" class="form-control">
+                    <input type="number" name="selection" id="numGse-A3"min="0" class="form-control">
                 </div>
             </form>
-                <label id="lblerrore"></label>
-                <a class="btn btn-primary btn-block" id="btnLettura">Aggiungi dati</a>
+            <label id="lblerrore"></label>
+            <a class="btn btn-primary btn-block" id="btnLettura" style="color:white">Aggiungi dati</a>
             </form>
         </div>
     </div>
