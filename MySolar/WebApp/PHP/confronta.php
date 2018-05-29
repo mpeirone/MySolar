@@ -110,7 +110,7 @@ if(!isset($_SESSION['Id']))
                 <div class="modal-body">Clicca su "Logout" per uscire</div>
                 <div class="modal-footer">
                     <button class="btn btn-secondary" type="button" data-dismiss="modal">Annulla</button>
-                    <a class="btn btn-primary" href="../Pages/login.html">Logout</a>
+                    <a class="btn btn-primary" href="../PHP/logout.php">Logout</a>
                 </div>
             </div>
         </div>

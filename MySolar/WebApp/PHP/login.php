@@ -78,7 +78,7 @@ if(isset($_SESSION['Id']))
             </form>
             <div class="text-center">
                 <a class="d-block small mt-3" href="register.php">Registra un account</a>
-                <a class="d-block small" href="#">Pasword dimenticata?</a>
+                <a class="d-block small" href="PasswordDimenticata.php">Password dimenticata?</a>
             </div>
         </div>
     </div>

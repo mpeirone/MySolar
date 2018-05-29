@@ -21,7 +21,7 @@ function DatiTabella(text) {
         Atot=dati[i]["PrivA1"]+dati[i]["PrivA2"]+dati[i]["PrivA3"];
         prodotta=dati[i]["Gse-A1"]+dati[i]["Gse-A2"]+dati[i]["Gse-A3"];
         riga=$("<tr></tr>")
-        riga.append($("<td>"+i+"</td>"));
+        riga.append($("<td>"+(i+1)+"</td>"));
         riga.append($("<td>"+DatetoString(dati[i]["Data"])+"</td>"));
         riga.append($("<td>"+menAtot+"</td>"));
         riga.append($("<td>"+(Atot)+"</td>"));
@@ -30,7 +30,7 @@ function DatiTabella(text) {
         riga.append($("<td>"+(prodotta-menAtot)+"</td>"));
         riga.append($("<td>"+(Atot+(prodotta-menAtot))+"</td>"));
         riga.append($("<td>"+(((prodotta-menAtot)/(Atot+(prodotta-menAtot)))*100).roundTo(2)+"%</td>"));
-        riga.append($("<td><a href='./script/Rimuovi.php?Id="+dati[i]["IdDato"]+"' style='color:black'><i class='fas fa-pencil-alt'></i></a> <a href='./script/Rimuovi.php?Id="+dati[i]["IdDato"]+"' style='color:black'><i class='fas fa-times'></i></a>"));
+        riga.append($("<td><a href='./modifica.php?Id="+dati[i]["IdDato"]+"' style='color:black'><i class='fas fa-pencil-alt'></i></a> <a href='./script/Rimuovi.php?Id="+dati[i]["IdDato"]+"' style='color:black'><i class='fas fa-times'></i></a>"));
         $('#TBodyDati').append(riga);
     }
 

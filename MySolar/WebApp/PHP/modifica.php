@@ -2,6 +2,24 @@
 session_start();
 if(!isset($_SESSION['Id']))
     header("location: login.php");
+else if(!isset($_GET["Id"]))
+    header("location: lettura.php");
+else
+    {
+        $con=new mysqli("localhost","root","","solardb");
+        if($con->connect_errno)
+            header("location: index.php");
+        $utente=$_SESSION['Id'];
+        $IdDato=$_GET["Id"];
+        $sql = "select * from dati where `IdUtente`=$utente and `IdDato`=$IdDato";
+        $rs = $con->query($sql);
+        if (!$rs)
+            header("location: index.php");
+        if($rs->num_rows==0)
+            header("location: index.php");
+        $record=$rs->fetch_assoc();
+    }
+
 ?>
 <!DOCTYPE html>
 <html lang="it">
@@ -12,7 +30,7 @@ if(!isset($_SESSION['Id']))
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>My Solar - Dati Mensili</title>
+    <title>My Solar - Nuova lettura</title>
     <!-- Bootstrap core CSS-->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom fonts for this template-->
@@ -39,14 +57,14 @@ if(!isset($_SESSION['Id']))
                     <span class="nav-link-text">Pagina Principale</span>
                 </a>
             </li>
-            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Nuova Lettura">
-                <a class="nav-link" href="lettura.php">
+            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Nuova Lettura" style="background-color: #212529">
+                <a class="nav-link" href="#">
                     <i class="fas fa-pencil-alt"></i>
                     <span class="nav-link-text">Nuova Lettura</span>
                 </a>
             </li>
-            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dati Mensili" style="background-color: #212529">
-                <a class="nav-link" href="#">
+            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dati Mensili">
+                <a class="nav-link" href="dati.php">
                     <i class="fas fa-print"></i>
                     <span class="nav-link-text">Dati Mensili</span>
                 </a>
@@ -78,48 +96,56 @@ if(!isset($_SESSION['Id']))
 </nav>
 <div class="content-wrapper">
     <div class="container-fluid">
-        <!-- Example DataTables Card-->
+        <?php
+        echo("<a id='IdDato' style='display:none;'>".$record['IdDato']."</a>");
+        ?>
         <div class="card mb-3">
             <div class="card-header">
-                <i class="fa fa-table"></i> Dati Produzione Impianto</div>
-            <div class="card-body">
-                <div class="table-responsive">
-                    <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                        <thead>
-                        <tr>
-                            <th>#</th>
-                            <th>Data</th>
-                            <th>Energia venduta</th>
-                            <th>Energia compratata</th>
-                            <th>Saldo</th>
-                            <th>Energia prodotta</th>
-                            <th>Autoconsumo</th>
-                            <th>Energia consumata</th>
-                            <th>% Autoconsumo</th>
-                            <th> </th>
-                        </tr>
-                        </thead>
-                        <tfoot>
-                        <tr>
-                            <th>#</th>
-                            <th>Data</th>
-                            <th>Energia venduta</th>
-                            <th>Energia compratata</th>
-                            <th>Saldo</th>
-                            <th>Energia prodotta</th>
-                            <th>Autoconsumo</th>
-                            <th>Energia consumata</th>
-                            <th>% Autoconsumo</th>
-                            <th> </th>
-                        </tr>
-                        </tfoot>
-                        <tbody id="TBodyDati">
-
-                        </tbody>
-                    </table>
+                <i class="fa fa-area-chart"></i>Contatore Privato</div>
+            <form role="form">
+                <div class="form-group">
+                    <?php
+                    echo("<label>Data Lettura</label>");
+                    echo("<input type='date' id='DataLettura'  value=".$record['Data']." class='form-control'>");
+                    echo("<label>A1</label>");
+                    echo("<input type='number' name='selection' id='numPrivA1' min='0' value=".$record['PrivA1']." class='form-control'>");
+                    echo("<label>A2</label>");
+                    echo("<input type='number' name='selection' id='numPrivA2' min='0' value=".$record['PrivA2']." class='form-control'>");
+                    echo("<label>A3</label>");
+                    echo("<input type='number' name='selection' id='numPrivA3' min='0' value=".$record['PrivA3']." class='form-control'>");
+                    echo("<label>-A1</label>");
+                    echo("<input type='number' name='selection' id='numPriv-A1' min='0' value=".$record['Priv-A1']." class='form-control'>");
+                    echo("<label>-A2</label>");
+                    echo("<input type='number' name='selection' id='numPriv-A2' min='0' value=".$record['Priv-A2']." class='form-control'>");
+                    echo("<label>-A3</label>");
+                    echo("<input type='number' name='selection' id='numPriv-A3' min='0' value=".$record['Priv-A3']." class='form-control'>");
+                    ?>
                 </div>
-            </div>
-            <div class="card-footer small text-muted last-update">Updated yesterday at 11:59 PM</div>
+        </div>
+        <div class="card mb-3">
+            <div class="card-header">
+                <i class="fa fa-area-chart"></i> Contatore GSE</div>
+            <form role="form">
+                <div class="form-group">
+                    <?php
+                    echo("<label>A1</label>");
+                    echo("<input type=number name=selection id=numGseA1 min=0 value=".$record['GseA1']." class=form-control>");
+                    echo("<label>A2</label>");
+                    echo("<input type=number name=selection id=numGseA2 min=0 value=".$record['GseA2']." class=form-control>");
+                    echo("<label>A3</label>");
+                    echo("<input type=number name=selection id=numGseA3 min=0 value=".$record['GseA3']." class=form-control>");
+                    echo("<label>-A1</label>");
+                    echo("<input type=number name=selection id=numGse-A1 min=0 value=".$record['Gse-A1']." class=form-control>");
+                    echo("<label>-A2</label>");
+                    echo("<input type=number name=selection id=numGse-A2 min=0 value=".$record['Gse-A2']." class=form-control>");
+                    echo("<label>-A3</label>");
+                    echo("<input type=number name=selection id=numGse-A3 min=0 value=".$record['Gse-A3']." class=form-control>");
+                    ?>
+                </div>
+            </form>
+            <label id="lblerrore"></label>
+            <a class="btn btn-primary btn-block" id="btnLettura" style="color:white">Modifica dati</a>
+            </form>
         </div>
     </div>
     <!-- /.container-fluid-->
@@ -165,7 +191,9 @@ if(!isset($_SESSION['Id']))
     <!-- Custom scripts for all pages-->
     <script src="../js/sb-admin.min.js"></script>
     <!-- Custom scripts for this page-->
-    <script src="../js/dati.js"></script>
+    <script src="../js/sb-admin-datatables.min.js"></script>
+    <script src="../js/sb-admin-charts.min.js"></script>
+    <script src="../js/modifica.js"></script>
     <script src="../js/libreria.js"></script>
 </div>
 </body>

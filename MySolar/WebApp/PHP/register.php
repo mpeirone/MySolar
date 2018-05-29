@@ -87,15 +87,12 @@ if(isset($_SESSION['Id']))
                     echo("<p>Campo conferma  non inserito</p>");
                 }
                 }
-            }else
-            {
-                echo("<p>Pagina appena caricata</p>");
             }
 
             ?>
             <div class="text-center">
                 <a class="d-block small mt-3" href="login.php">Login</a>
-                <a class="d-block small" href="#">Password dimenticata?</a>
+                <a class="d-block small" href="PasswordDimenticata.php">Password dimenticata?</a>
             </div>
         </div>
     </div>

@@ -1,6 +1,5 @@
 
 $( document ).ready(function () {
-    DataOdierna();
     resetErrori();
     send_request("../PHP/script/UltimiDati.php", "POST", "Data=" +(String($("#DataLettura").val()).substr(0,8))+"01", ImpostaMin);
     $("#btnLettura").click(InviaDati);
@@ -27,7 +26,7 @@ function InviaDati() {
             errore=true;
         }});
     if(!errore) {
-        send_request("../PHP/script/scrivi.php", "POST", "PrivA1=" + $("#numPrivA1").val() + "&PrivA2=" + $("#numPrivA2").val() + "&PrivA3=" + $("#numPrivA3").val() + "&Priv_A1=" + $("#numPriv-A1").val() + "&Priv_A2=" + $("#numPriv-A2").val() + "&Priv_A3=" + $("#numPriv-A3").val() + "&GseA1=" + $("#numGseA1").val() + "&GseA2=" + $("#numGseA2").val() + "&GseA3=" + $("#numGseA3").val() + "&Gse_A1=" + $("#numGse-A1").val() + "&Gse_A2=" + $("#numGse-A2").val() + "&Gse_A3=" + $("#numGse-A3").val() + "&Data=" + (String($("#DataLettura").val()).substr(0, 8)) + "01", Risposta);
+        send_request("../PHP/script/modifica.php", "POST", "PrivA1=" + $("#numPrivA1").val() + "&PrivA2=" + $("#numPrivA2").val() + "&PrivA3=" + $("#numPrivA3").val() + "&Priv_A1=" + $("#numPriv-A1").val() + "&Priv_A2=" + $("#numPriv-A2").val() + "&Priv_A3=" + $("#numPriv-A3").val() + "&GseA1=" + $("#numGseA1").val() + "&GseA2=" + $("#numGseA2").val() + "&GseA3=" + $("#numGseA3").val() + "&Gse_A1=" + $("#numGse-A1").val() + "&Gse_A2=" + $("#numGse-A2").val() + "&Gse_A3=" + $("#numGse-A3").val() + "&IdDato=" + $("#IdDato").html() + "&Data=" + (String($("#DataLettura").val()).substr(0, 8)) + "01", Risposta);
     }
     else
     {
@@ -50,13 +49,6 @@ $(".form-control").on("change",function () {
         $(this).css("border-color","");
 
 });
-
-function DataOdierna() {
-    var now = new Date();
-    var data=now.toISOString().substr(0, 10);
-    $("#DataLettura").val(data);
-    $("#DataLettura").prop("max",data);
-}
 function resetErrori() {
     $(".form-control").css("border-color","");
     $("#lblerrore").html("")
@@ -73,10 +65,8 @@ function Risposta(responseText){
     }
     else if(responseText=="OK")
     {
-        DataOdierna();
-        $("#lblerrore").html("Dati inseriti");
+        $("#lblerrore").html("Dati aggiornati");
         $("#lblerrore").css("color","green");
-        $("[name=selection]").val("");
     }else{
         $("#lblerrore").html("Errore generico");
         $("#lblerrore").css("color","red");
