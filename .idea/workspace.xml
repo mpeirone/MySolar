@@ -66,8 +66,8 @@
       <file leaf-file-name="scrivi.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MySolar/WebApp/PHP/script/scrivi.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="4" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="28" />
+            <state relative-caret-position="68">
+              <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="5" selection-end-column="85" />
               <folding>
                 <marker date="1527601917049" expanded="true" signature="524:590" ph="select * fro... dati" />
                 <marker date="1527601917049" expanded="true" signature="1227:1604" ph="INSERT INTO dati... " />
@@ -79,11 +79,10 @@
       <file leaf-file-name="register.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/MySolar/WebApp/PHP/register.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="69" column="26" lean-forward="false" selection-start-line="69" selection-start-column="26" selection-end-line="69" selection-end-column="26" />
+            <state relative-caret-position="251">
+              <caret line="86" column="42" lean-forward="false" selection-start-line="86" selection-start-column="42" selection-end-line="86" selection-end-column="42" />
               <folding>
-                <marker date="1527693160221" expanded="true" signature="3665:3817" ph="INSERT INTO `utenti`... " />
-                <marker date="1527693160221" expanded="true" signature="3665:3959" ph="INSERT INTO `utenti`... " />
+                <marker date="1527704142399" expanded="true" signature="5158:5464" ph="INSERT INTO utenti" />
               </folding>
             </state>
           </provider>
@@ -123,12 +122,14 @@
       <find>Dati</find>
       <find>pages</find>
       <find>die</find>
+      <find>$_GET</find>
     </findStrings>
     <replaceStrings>
       <replace>fas fa-long-arrow-alt-down</replace>
       <replace>[0]</replace>
       <replace>&quot;);</replace>
       <replace>dati</replace>
+      <replace>$_POST</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -168,6 +169,7 @@
         <option value="$PROJECT_DIR$/MySolar/WebApp/PHP/index.php" />
         <option value="$PROJECT_DIR$/MySolar/WebApp/PHP/confronta.php" />
         <option value="$PROJECT_DIR$/MySolar/WebApp/PHP/login.php" />
+        <option value="$PROJECT_DIR$/MySolar/WebApp/PHP/registernew.php" />
         <option value="$PROJECT_DIR$/MySolar/WebApp/PHP/register.php" />
       </list>
     </option>
@@ -183,7 +185,7 @@
     <servers />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-7" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
@@ -263,15 +265,15 @@
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Matte\Documents\GitHub\MySolar\MySolar\WebApp\Pages" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\xampp\htdocs\MySolar\MySolar\WebApp\PHP" />
       <recent name="D:\xampp\htdocs\MySolar\MySolar\WebApp\vendor" />
       <recent name="D:\xampp\htdocs\MySolar\MySolar\WebApp\PHP\script" />
       <recent name="D:\xampp\htdocs\MySolar\MySolar\WebApp\js" />
-      <recent name="D:\xampp\htdocs\MySolar\MySolar\WebApp\PHP" />
       <recent name="C:\xampp\htdocs\MySolar-master matte\MySolar\WebApp\js" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Matte\Documents\GitHub\MySolar\MySolar\WebApp\Pages" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -349,15 +351,15 @@
       <workItem from="1527511209703" duration="13661000" />
       <workItem from="1527597071274" duration="6105000" />
       <workItem from="1527683465527" duration="8111000" />
-      <workItem from="1527691598527" duration="1671000" />
+      <workItem from="1527691598527" duration="5190000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="100295000" />
+    <option name="totallyTimeSpent" value="103814000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18123667" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -421,7 +423,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/MySolar/WebApp/Pages/login.html" />
     <entry file="file://$PROJECT_DIR$/MySolar/WebApp/Pages/register.html" />
     <entry file="file://$PROJECT_DIR$/MySolar/WebApp/Pages/cards.html" />
     <entry file="file://$PROJECT_DIR$/MySolar/WebSite/index.html">
@@ -658,10 +659,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/MySolar/WebApp/PHP/registernew.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="516">
+          <caret line="93" column="34" lean-forward="false" selection-start-line="93" selection-start-column="34" selection-end-line="93" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/MySolar/WebApp/PHP/script/scrivi.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="4" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="28" />
+        <state relative-caret-position="68">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="5" selection-end-column="85" />
           <folding>
             <marker date="1527601917049" expanded="true" signature="524:590" ph="select * fro... dati" />
             <marker date="1527601917049" expanded="true" signature="1227:1604" ph="INSERT INTO dati... " />
@@ -671,11 +680,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/MySolar/WebApp/PHP/register.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="69" column="26" lean-forward="false" selection-start-line="69" selection-start-column="26" selection-end-line="69" selection-end-column="26" />
+        <state relative-caret-position="251">
+          <caret line="86" column="42" lean-forward="false" selection-start-line="86" selection-start-column="42" selection-end-line="86" selection-end-column="42" />
           <folding>
-            <marker date="1527693160221" expanded="true" signature="3665:3817" ph="INSERT INTO `utenti`... " />
-            <marker date="1527693160221" expanded="true" signature="3665:3959" ph="INSERT INTO `utenti`... " />
+            <marker date="1527704142399" expanded="true" signature="5158:5464" ph="INSERT INTO utenti" />
           </folding>
         </state>
       </provider>

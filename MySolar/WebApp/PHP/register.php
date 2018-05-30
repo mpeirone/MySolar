@@ -26,7 +26,7 @@ if(isset($_SESSION['Id']))
     <div class="card card-register mx-auto mt-5">
         <div class="card-header">Registra un account</div>
         <div class="card-body">
-            <form action="register.php"  method="get">
+            <form action="register.php"  method="post">
                 <div class="form-group">
                     <div class="form-row">
                         <div class="col-md-6">
@@ -46,6 +46,30 @@ if(isset($_SESSION['Id']))
                 <div class="form-group">
                     <div class="form-row">
                         <div class="col-md-6">
+                            <label for="InputIndirizzi">Indirizzo</label>
+                            <input class="form-control" id="InputIndirizzi" type="text" name="Indirizzo" placeholder="Indirizzo">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="InputCitta">Città</label>
+                            <input class="form-control" id="InputCitta" type="text" name="Citta" placeholder="Città">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="form-row">
+                        <div class="col-md-6">
+                            <label for="InputProvincia">Provincia</label>
+                            <input class="form-control" id="InputProvincia" type="text" name="Provincia" placeholder="Provincia">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="InputCap">Cap</label>
+                            <input class="form-control" id="InputCap" type="text" name="Cap" placeholder="CAP">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="form-row">
+                        <div class="col-md-6">
                             <label for="exampleInputPassword1">Password</label>
                             <input class="form-control" id="exampleInputPassword1" type="password" name="Password" placeholder="Password">
                         </div>
@@ -58,47 +82,53 @@ if(isset($_SESSION['Id']))
                 <input type="submit" class="btn btn-primary btn-block" value="Registati">
             </form>
             <?php
-            if(isset($_GET['Nome'])&&isset($_GET['Cognome'])&&isset($_GET['Email'])&&isset($_GET['Password'])&&isset($_GET['ConfermaPassword']))
-            {
-                if(($_GET['Nome']!="")&&($_GET['Cognome']!="")&&($_GET['Email']!="")&&($_GET['Password']!="")&&($_GET['ConfermaPassword']!=""))
-                {
-                    if($_GET['Password']==$_GET['ConfermaPassword'])
-                    {
+            if(isset($_POST['Nome'])&&isset($_POST['Cognome'])&&isset($_POST['Email'])&&isset($_POST['Password'])&&isset($_POST['ConfermaPassword'])&&isset($_POST['Indirizzo'])&&isset($_POST['Citta'])&&isset($_POST['Cap'])&&isset($_POST['Provincia'])) {
+                if (($_POST['Nome'] != "") && ($_POST['Cognome'] != "") && ($_POST['Email'] != "") && ($_POST['Password'] != "") && ($_POST['ConfermaPassword'] != "")) {
+                    if(preg_match("/\d{5}/", $_POST['Cap'])){
+                    if ($_POST['Password'] == $_POST['ConfermaPassword']) {
                         $con=new mysqli("localhost","root","","solardb");
                         if($con->connect_errno)
                             die("Errore connessione database. ".$con->connect_errno." ".$con->connect_error);
-                        //$sql = "INSERT INTO `utenti`(`Email`, `Password`, `Nome`, `Cognome`, `Data_Registrazione`, `Indirizzo`, `Città`, `Provincia`, `CAP`, `EmailConfermata`) VALUES (".$_GET['Email'].",".$_GET['Password'].",".$_GET['Nome'].",".$_GET['Cognome'].",[value-6],[value-7],[value-8],[value-9],[value-10],[value-11]);
-                        $rs = $con->query($sql);
-                        echo("<p>Ti sei registrato</p>");
-                        //esegui registrazione
-                    }else{
+                        $sql="INSERT INTO  utenti(Email,Password,Nome,Cognome,Data_Registrazione,Indirizzo,Citta,Provincia,CAP) VALUES('".$_POST['Email']."',MD5('".$_POST['Password']."'),'".$_POST['Nome']."','".$_POST['Cognome']."',CURDATE(),'".$_POST['Indirizzo']."','".$_POST['Citta']."','".$_POST['Provincia']."','".$_POST['Cap']."')";
+                        $rs=$con->query($sql);
+                        if (!$rs)
+                            die("Errore query. " . $con->errno . " " . $con->error);
+                        echo("<p>Sei registrato!Ora puoi fare l'accesso!</p>");
+                        $con->close();
+                    } else {
                         echo("<p>Le 2 password non corrispondono</p>");
                     }
-                }else
-                {
-                if($_GET['Nome']=="")
-                {
-                    echo("<p>Campo nome non inserito</p>");
-                }else if($_GET['Cognome']=="")
-                {
-                    echo("<p>Campo Cognome non inserito</p>");
-                }else if($_GET['Email']=="")
-                {
-                    echo("<p>Campo email non inserito</p>");
-                }else if($_GET['Password']=="")
-                {
-                    echo("<p>Campo password non inserito</p>");
-                }else if($_GET['ConfermaPassword']=="")
-                {
-                    echo("<p>Campo conferma  non inserito</p>");
-                }
+                    }else
+                        {
+                            echo("<p>Attenzione il cap inserito non è valido!</p>");
+                    }
+                } else {
+                    if ($_POST['Nome'] == "") {
+                        echo("<p>Campo nome non inserito</p>");
+                    } else if ($_POST['Cognome'] == "") {
+                        echo("<p>Campo Cognome non inserito</p>");
+                    } else if ($_POST['Email'] == "") {
+                        echo("<p>Campo email non inserito</p>");
+                    }else if ($_POST['Indirizzo'] == "") {
+                        echo("<p>Campo indirizzo  non inserito</p>");
+                    }else if ($_POST['Cap'] == "") {
+                        echo("<p>Campo CAP  non inserito</p>");
+                    }else if ($_POST['Provincia'] == "") {
+                        echo("<p>Campo provincia  non inserito</p>");
+                    }else if ($_POST['Citta'] == "") {
+                        echo("<p>Campo città  non inserito</p>");
+                    } else if ($_POST['Password'] == "") {
+                        echo("<p>Campo password non inserito</p>");
+                    } else if ($_POST['ConfermaPassword'] == "") {
+                        echo("<p>Campo conferma  non inserito</p>");
+                    }
                 }
             }
 
             ?>
             <div class="text-center">
                 <a class="d-block small mt-3" href="login.php">Login</a>
-                <a class="d-block small" href="PasswordDimenticata.php">Password dimenticata?</a>
+                <a class="d-block small" href="#">Password dimenticata?</a>
             </div>
         </div>
     </div>
@@ -111,4 +141,3 @@ if(isset($_SESSION['Id']))
 </body>
 
 </html>
-
