@@ -100,7 +100,8 @@ function AggiornaGrafico1(text) {
                 }],
             },
             legend: {
-                display: false
+                display: true,
+                position:'top'
             }
         }
     });

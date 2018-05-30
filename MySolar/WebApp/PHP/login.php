@@ -53,7 +53,7 @@ if(isset($_SESSION['Id']))
                             $scalar=((int)$rs->fetch_assoc() ["count"]);
                                     if($scalar>=1)
                                     {
-                                        $sql="select IdUtente from utenti where email='".$_POST["InputEmail"]."' and password='".$_POST['InputPassword']."'";
+                                        $sql="select IdUtente from utenti where email='".$_POST["InputEmail"]."' and password= MD5('".$_POST['InputPassword']."')";
                                         $rs=$con->query($sql);
                                         if(!$rs)
                                             die("Errore query. ".$con->errno." ".$con->error);

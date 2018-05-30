@@ -27,7 +27,7 @@ if(!isset($_SESSION['Id']))
 <body class="fixed-nav sticky-footer bg-dark" id="page-top">
 <!-- Navigation-->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
-    <a class="navbar-brand" href="../Pages/index.html">My solar</a>
+    <a class="navbar-brand" href="index.php">My solar</a>
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -78,11 +78,30 @@ if(!isset($_SESSION['Id']))
 </nav>
 <div class="content-wrapper">
 
-    <select class="selectpicker form-control" data-live-search="true">
-        <option data-tokens="ketchup mustard">Hot Dog, Fries and a Soda</option>
-        <option data-tokens="mustard">Burger, Shake and a Smile</option>
-        <option data-tokens="frosting">Sugar, Spice and all things nice</option>
-    </select>
+
+
+    <div class="container-fluid">
+        <div class="card mb-3">
+            <div class="card-header">
+                <i class="fa fa-area-chart"></i>Confronto Mesi</div>
+            <form role="form">
+                <div class="form-group">
+                    <label>Seleziona un giorno del primo mese che vuoi confrontare</label>
+                    <input type="date" id="mese1" class="form-control date" >
+                    <label>Seleziona un giorno del secondo mese che vuoi confrontare</label>
+                    <input type="date" id="mese2" class="form-control date"  >
+                    <label id="lblerrore"></label>
+                    <a class="btn btn-primary btn-block" id="btnLettura" style="color:white">Confronta Mesi</a>
+                </div>
+        </div>
+        <div class="card mb-3" id="containergrafico">
+            <div class="card-header">
+                <i class="fa fa-area-chart"></i>Grafico</div>
+            <canvas id="myBarChart" width="100" height="50"></canvas>
+        </div>
+        <br>
+    </div>
+
 
     <!-- /.container-fluid-->
     <!-- /.content-wrapper-->
@@ -129,6 +148,12 @@ if(!isset($_SESSION['Id']))
     <!-- Custom scripts for this page-->
     <script src="../js/sb-admin-datatables.min.js"></script>
     <script src="../js/sb-admin-charts.min.js"></script>
+    <script src="../js/confronta.js"></script>
+    <script src="../js/libreria.js"></script>
+
+
+
+
 </div>
 </body>
 

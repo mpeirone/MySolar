@@ -64,6 +64,12 @@ if(isset($_SESSION['Id']))
                 {
                     if($_GET['Password']==$_GET['ConfermaPassword'])
                     {
+                        $con=new mysqli("localhost","root","","solardb");
+                        if($con->connect_errno)
+                            die("Errore connessione database. ".$con->connect_errno." ".$con->connect_error);
+                        //$sql = "INSERT INTO `utenti`(`Email`, `Password`, `Nome`, `Cognome`, `Data_Registrazione`, `Indirizzo`, `Città`, `Provincia`, `CAP`, `EmailConfermata`) VALUES (".$_GET['Email'].",".$_GET['Password'].",".$_GET['Nome'].",".$_GET['Cognome'].",[value-6],[value-7],[value-8],[value-9],[value-10],[value-11]);
+                        $rs = $con->query($sql);
+                        echo("<p>Ti sei registrato</p>");
                         //esegui registrazione
                     }else{
                         echo("<p>Le 2 password non corrispondono</p>");

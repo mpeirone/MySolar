@@ -27,7 +27,7 @@ if(!isset($_SESSION['Id']))
 <body class="fixed-nav sticky-footer bg-dark" id="page-top">
 <!-- Navigation-->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
-    <a class="navbar-brand" href="../Pages/index.html">My solar</a>
+    <a class="navbar-brand" href="index.php">My solar</a>
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -90,7 +90,7 @@ if(!isset($_SESSION['Id']))
                             <th>#</th>
                             <th>Data</th>
                             <th>Energia venduta</th>
-                            <th>Energia compratata</th>
+                            <th>Energia comprata</th>
                             <th>Saldo</th>
                             <th>Energia prodotta</th>
                             <th>Autoconsumo</th>
@@ -104,7 +104,7 @@ if(!isset($_SESSION['Id']))
                             <th>#</th>
                             <th>Data</th>
                             <th>Energia venduta</th>
-                            <th>Energia compratata</th>
+                            <th>Energia comprata</th>
                             <th>Saldo</th>
                             <th>Energia prodotta</th>
                             <th>Autoconsumo</th>
